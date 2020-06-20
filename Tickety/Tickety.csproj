@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3C915BC-F416-47F0-BF04-47BB4E511D3B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tickety</RootNamespace>
+    <AssemblyName>Tickety</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Air_flights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Air_flights.Designer.cs">
+      <DependentUpon>Air_flights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Button_WOC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cregister.cs" />
+    <Compile Include="filing_data.cs" />
+    <Compile Include="filing_orders.cs" />
+    <Compile Include="Concert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Concert.Designer.cs">
+      <DependentUpon>Concert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cinema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cinema.Designer.cs">
+      <DependentUpon>Cinema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Football.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Football.Designer.cs">
+      <DependentUpon>Football.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Review_moun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Review_moun.Designer.cs">
+      <DependentUpon>Review_moun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Review_meg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Review_meg.Designer.cs">
+      <DependentUpon>Review_meg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Review_me.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Review_me.Designer.cs">
+      <DependentUpon>Review_me.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hotels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hotels.Designer.cs">
+      <DependentUpon>Hotels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General.cs" />
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.cs">
+      <DependentUpon>register.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Air_flights.resx">
+      <DependentUpon>Air_flights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cinema.resx">
+      <DependentUpon>Cinema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Concert.resx">
+      <DependentUpon>Concert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Football.resx">
+      <DependentUpon>Football.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hotels.resx">
+      <DependentUpon>Hotels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Review_me.resx">
+      <DependentUpon>Review_me.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Review_meg.resx">
+      <DependentUpon>Review_meg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Review_moun.resx">
+      <DependentUpon>Review_moun.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-zamalek-png-zamalek-sc-al-ahly-sc-clipart-175b84bbe9eb457a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-al-ahly-sc-dream-league-soccer-egypt-national-foot-egypt-national-5b1773d6e72fe5.273083431528263638947.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5df56c9e805d7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-al-masry-sc-egyptian-premier-league-talaea-el-gai-the-town-of-light-1-5be523bc266e77.5369766815417435481574.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-fire-emblem-awakening-spartan-race-video-game-fire-5aedb788bd2fc7.9193689715255284567749.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\80029414_690226254718321_4137961506614542336_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f7148f925a9983f33ebee33084a102a7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %287%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2019-12-15 at 7.29.49 AM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2019-12-15 at 7.29.49 AM %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2019-12-15 at 7.29.49 AM %283%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2019-12-15 at 7.29.49 AM %282%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2019-12-15 at 7.29.48 AM %282%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2019-12-15 at 7.29.48 AM %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f7148f925a9983f33ebee33084a102a71.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
